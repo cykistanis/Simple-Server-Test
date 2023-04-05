@@ -31,9 +31,10 @@ class TransactionsService {
 
       return {
         debit: debit,
-        crebit: credit,
+        credit: credit,
         time: new Date(t.created_at).toDateString(),
         description: description,
+        status:t.status,
       };
     });
   }

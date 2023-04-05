@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --ignore sessions index.js",
+    "start": "./node_modules/.bin/nodemon --ignore sessions index.js",
     "migrate": "node node_modules/db-migrate/bin/db-migrate",
     "test-csrf": "cd ./.test-csrf/ && ../node_modules/.bin/static-server --port 8080"
   },
